@@ -21,6 +21,7 @@
         <module>xc-service-api</module>
         <module>xc-service-manage-cms</module>
         <module>xc-govern-center</module>
+        <module>test-freemarke</module>
     </modules>
 
     <properties>

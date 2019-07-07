@@ -1,0 +1,23 @@
+server:
+  port: 8088
+spring:
+  application:
+    name: test-freemarke
+  data:
+    mongodb:
+      uri: mongodb://root:123456@localhost:27017
+      database: xc_cms
+  freemarker:
+    cache: false
+    settings:
+      template_update_delay: 0
+#eureka:
+#  client:
+#    registerWithEureka: true #服务注册，是否将自己注册到Eureka服务中
+#    fetchRegistry: true #服务发现，是否从Eureka中获取注册信息
+#    serviceUrl: #Eureka客服端与Eureka服务端的交互地址，多个中间用逗号分隔
+#      defaultZone: ${EUREKA_SERVER:http://localhost:50101/eureka/,http://localhost:50102/eureka/}
+#  instance:
+#    prefer-ip-address: true #将自己的IP地址注册到Eureka服务中
+#    ip-address: ${IP_ADDRESS:127.0.0.1}
+#    instance-id: ${spring.application.name}:${server.port} #指定实例ID
