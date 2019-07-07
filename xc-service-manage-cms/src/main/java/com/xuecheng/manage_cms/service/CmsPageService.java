@@ -185,7 +185,7 @@ public class CmsPageService {
             try {
                 return IOUtils.toString(gridFsResource.getInputStream(), "UTF-8");
             } catch (IOException e) {
-                log.error(e.getMessage(), e);
+                e.printStackTrace();
             }
         }
         return null;

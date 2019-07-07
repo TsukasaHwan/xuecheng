@@ -7,6 +7,10 @@ spring:
     mongodb:
       uri: mongodb://root:123456@localhost:27017
       database: xc_cms
+  freemarker:
+    cache: false #关闭缓存方便测试
+    settings:
+      template_update_delay: 0
 #eureka:
 #  client:
 #    registerWithEureka: true #服务注册，是否将自己注册到Eureka服务中
