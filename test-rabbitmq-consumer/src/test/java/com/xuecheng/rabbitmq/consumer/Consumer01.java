@@ -27,6 +27,7 @@ public class Consumer01 {
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
                 //交换机
                 String exchange = envelope.getExchange();
+                System.out.println("交换机：" + exchange);
                 //消息ID，mq在channel中标识消息的ID，可用于消息已接收
                 long deliveryTag = envelope.getDeliveryTag();
                 System.out.println("消息ID:" + deliveryTag);
