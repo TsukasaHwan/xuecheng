@@ -11,6 +11,12 @@ spring:
     cache: false #关闭缓存方便测试
     settings:
       template_update_delay: 0
+  rabbitmq:
+    host: localhost
+    virtual-host: /
+    username: guest
+    password: guest
+    port: 5672
 #eureka:
 #  client:
 #    registerWithEureka: true #服务注册，是否将自己注册到Eureka服务中

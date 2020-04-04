@@ -1,5 +1,6 @@
 package com.xuecheng.framework.domain.cms;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
@@ -45,6 +46,7 @@ public class CmsPage {
     //状态
     private String pageStatus;
     //创建时间
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date pageCreateTime;
     //模版id
     private String templateId;
